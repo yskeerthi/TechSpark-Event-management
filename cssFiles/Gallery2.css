@@ -1,0 +1,639 @@
+body {
+    margin: 0;
+    position: relative;
+    background-color: black;
+    background-size: 100% 100%;
+    /* background-image: linear-gradient(to top right,rgb(39, 33, 33)); */
+    background-image: url("../Images/bubble1.jpg");
+}
+
+.GalleryParent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: 100% 100%;
+    margin-bottom: 5%;
+}
+
+ul button {
+    display: none;
+
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -5%;
+    font-size: 200%;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    color: grey;
+}
+
+.slick-active {
+    color: white;
+}
+
+.slick-next {
+    position: absolute;
+    top: 50%;
+    color: #333;
+    padding: 10px 15px;
+    cursor: pointer;
+    right: 10%;
+    border-radius: 20px;
+    font-size: 120%;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    left: 10%;
+    z-index: 10000;
+    font-size: 120%;
+    
+}
+
+.gal {
+    width: 70%;
+    height: 87%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.page_1_part_1 {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_1_part_2 {
+    width: 100%;
+    height: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_1_part_11 {
+    width: 37%;
+    height: 98%;
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 2px 1px rgb(240, 237, 237);
+    border-radius: 20px;
+    background-image: url("../Images/kali1.jpg");
+    background-size: 100% 100%;
+}
+
+.page_1_part_12 {
+    width: 60%;
+    height: 100%;
+    border: 1px solid transparent;
+
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    background-size: 100% 100%;
+    background-image: url("../Images/gifts1.png");
+}
+
+.page_1_part_21 {
+    width: 30%;
+    height: 100%;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    background-image: url("../Images/piaa.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.page_1_part_22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    background-image: url("../Images/sings.jpg");
+    background-size: 100% 100%;
+   
+}
+
+.page_1_part_23 {
+    width: 33%;
+    height: 100%;
+    border: 1px solid transparent;
+    background-image: url("../Images/gift1.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.page_2_part_1 {
+    width: 100%;
+    height: 48%;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_2_part_11 {
+    width: 59%;
+    height: 100%;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url("../Images/rowdyBoys.jpg");
+    background-size: 100% 100%;
+    
+}
+
+.page_2_part_12 {
+    width: 38%;
+    height: 98%;
+    background-image: url("../Images/sing2.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.page_2_part_2 {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_2_part_21 {
+    width: 38%;
+    height: 100%;
+    background-image: url("../Images/Band1.avif");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.page_2_part_22 {
+    width: 59%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url("../Images/enjoyy.jpg");
+    background-size: 100% 100%;
+}
+
+.page_3_part_1 {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page_3_part_11 {
+    width: 32%;
+    height: 97%;
+    background-image: url("../Images/presentation1.jpg");
+     background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+}
+
+
+.page_3_part_12 {
+    width: 32%;
+    height: 100%;
+    /* border: 1px solid brown; */
+    box-shadow: 1px 1px 1px 1px white;
+    background-image: url("../Images/FrndsSmile.jpg");
+    border-radius: 20px;
+    background-size: 100% 100%;
+}
+
+.page_3_part_13 {
+    width: 32%;
+    height: 100%;
+    /* border: 1px solid brown; */
+    background-image: url("../Images/pianoo.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.page_3_part_2 {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_3_part_21 {
+    width: 32%;
+    height: 100%;
+    background-image: url("../Images/discusser.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.page_3_part_22 {
+    width: 32%;
+    height: 100%;
+    background-image: url("../Images/groupPiano.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+}
+
+.page_3_part_23 {
+    width: 32%;
+    height: 100%;
+    background-image: url("../Images/speech1.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dup_1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dup_4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_4_part_1 {
+    width: 32%;
+    height: 100%;
+    /* border: 1px solid rgb(239, 235, 235); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 100% 100%;
+}
+
+.page_4_part_11 {
+    width: 97%;
+    height: 31%;
+    /* border: 1px solid rgb(10, 192, 10); */
+    background-image: url("../Images/chess.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+}
+
+.page_4_part_12 {
+    width: 100%;
+    height: 31%;
+    /* border: 1px solid rgb(10, 192, 10); */
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    background-image: url("../Images/badmintonPlay1.jpg");
+    background-size: 100% 100%;
+}
+
+.page_4_part_13 {
+    width: 100%;
+    height: 31%;
+    /* border: 1px solid rgb(10, 192, 10);
+     */
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    background-image: url("../Images/flashflash.jpg");
+    background-size: 100% 100%;
+    
+}
+
+.page_4_part_2 {
+    width: 32%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page_4_part_21 {
+    width: 97%;
+    height: 48.5%;
+    border: 1px solid ghostwhite;
+    background-image: url("../Images/standup.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    margin-left: 1%;
+}
+
+.page_4_part_22 {
+    width: 100%;
+    height: 48.5%;
+    /* border: 1px solid ghostwhite; */
+    background-image: url("../Images/groupDance1.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    margin-left: 1%;
+}
+
+.page_4_part_3 {
+    width: 32%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page_4_part_31 {
+    width: 97%;
+    height: 31%;
+    /* border: 1px solid rgb(245, 221, 9); */
+    background-image: url("../Images/coder1.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+}
+
+.page_4_part_32 {
+    width: 100%;
+    height: 31%;
+    /* border: 1px solid rgb(245, 221, 9); */
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    background-image: url("../Images/football.avif");
+    background-size: 100% 100%;
+}
+
+.page_4_part_33 {
+    width: 100%;
+    height: 31%;
+    /* border: 1px solid rgb(245, 221, 9); */
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 20px;
+    background-image: url("../Images/GirlSinger1.jpg");
+    background-size: 100% 100%;
+}
+
+.ourGall{
+    margin-top:2%;
+    color:white;
+    width:100%;
+    height:10%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 280%;
+    font-family: "Playwrite BE VLG", cursive;
+}
+.ourGall::before{
+    content: "O";
+    color: red;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: "Playwrite BE VLG", cursive;
+}
+
+/* ----------- */
+
+.page_4_part_11:hover{
+    width:98%;
+    height:31.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_4_part_12:hover{
+    width:98%;
+    height:31.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_4_part_13:hover{
+    width:98%;
+    height:31.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_4_part_21:hover{
+    width:98%;
+    height:49%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_4_part_22:hover{
+    width:98%;
+    height:49%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_4_part_31:hover{
+    width:98%;
+    height:31.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_4_part_32:hover{
+    width:98%;
+    height:31.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_4_part_33:hover{
+    width:98%;
+    height:31.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_1_part_11:hover{
+    width:38%;
+    height:98.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_1_part_12:hover{
+    width:61%;
+    height:99%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_1_part_21:hover{
+    width:31%;
+    height:99%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_1_part_22:hover{
+    width:31%;
+    height:99%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_1_part_23:hover{
+    width:32%;
+    height:99%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
+.page_2_part_11:hover{
+    width: 59.5%;
+    height: 98.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_2_part_12:hover{
+    width: 38.5%;
+    height: 98.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_2_part_21:hover{
+    width: 38.5%;
+    height: 98.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_2_part_22:hover{
+    width: 59.5%;
+    height: 98.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
+
+.page_3_part_11:hover{
+    width: 32.5%;
+    height: 97.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_3_part_12:hover{
+    width: 32.5%;
+    height: 97.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_3_part_13:hover{
+    width: 32.5%;
+    height: 97.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_3_part_21:hover{
+    width: 32.5%;
+    height: 97.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_3_part_22:hover{
+    width: 32.5%;
+    height: 97.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.page_3_part_23:hover{
+    width: 32.5%;
+    height: 97.5%;
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
+.a1{
+    display: none;
+}
+
+@media screen and (max-width:1200px)
+{
+    .navbar{
+        display:none;
+    }
+    .button-10{
+        display:block;
+        /* margin-right: 20%; */
+       
+    }
+    .button-9{
+        display:none;
+    }
+    .op1{
+        display: none;
+    }
+
+    .navbar{
+        margin-left:16%;
+        
+    }
+    .a1{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1001px)
+{
+    .navbar{
+        margin-left:200000px;
+    }
+}
+/* ----------- */

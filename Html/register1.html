@@ -1,0 +1,448 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../cssFiles/style.css">
+        <style>
+            *{
+    padding:0px;
+    margin: 0px;
+}
+            .register1{
+                width:100%;
+                background-color: black;
+                position:relative;
+
+            }
+            .whole{
+            height:fit-content;
+            width:100%;
+           }
+            .p{
+                width:100%;
+                height:35svh;
+                background-image: url("../Images/A44T.gif");
+                background-size: 100% 100%;
+                position:relative;
+            }
+            .top{
+                width:100%;
+                height:18svh;
+    display:flex;
+    justify-content: center;
+    text-shadow: 5px 5px #E50000;
+    align-items:center;
+    color:rgb(193, 189, 189);
+    font-size: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name:movingup;
+   animation-duration: 0.7s;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+   position:absolute;
+   bottom:0px;
+}
+         .down{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            
+         }
+         .one{
+         width:80%;
+         margin-top: 20px;
+         justify-content: space-between;
+         }
+         .i select{
+            width:100%;
+            height:4svh;
+            box-shadow: 3px 3px 7px 4px grey;
+            color:#E50000;
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            background-color:rgb(158, 158, 158);
+            transition: all 0.5s ease;
+         }
+          .l:nth-child(odd){
+            width:100%;
+            height:fit-content;
+            display:flex;
+            margin-bottom: 20px;
+            justify-content: space-evenly;
+            animation-name: flipin;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;
+          }
+          .l:nth-child(even){
+            width:100%;
+            height:fit-content;
+            display:flex;
+            margin-bottom: 20px;
+            justify-content: space-evenly;
+            animation-name: flipin;
+            animation-fill-mode: forwards;
+            animation-duration: 1.2s;
+          }
+          .n{
+            width:20%;
+            display:flex;
+            justify-content: start;
+            align-items: center;
+            height: fit-content;
+            margin-left: 10px;
+            color:white;
+            font-size: 23px;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          }
+          .i{
+            width:70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .i input{
+            width:100%;
+            height:4svh;
+            box-shadow: 3px 3px 7px 4px rgb(40, 39, 39);
+            color:#E50000;
+            font-size: 16px;
+            background-color: rgb(158, 158, 158);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            transition: all 0.5s ease;
+          }
+          .i input:hover{
+            box-shadow: 3px 3px 7px 4px #E50000;
+            transition: all 0.5s ease;
+            transform:scale(1.02); 
+          }
+          .i select:hover{
+            box-shadow: 3px 3px 7px 4px #E50000;
+            transition: all 0.5s ease;
+            transform:scale(1.02);
+          }
+         .two{
+            width:fit-content;
+            height:fit-content;
+            padding:10px 20px;
+            font-size: 32px;
+            font-weight: bold;
+            color:white;
+            box-shadow: 2px 2px 5px 2px #E50000;
+            background-color: #E50000;
+            transition: all linear 1s;
+            margin-top: 30px;
+            margin-bottom: 60px;
+         }
+         .two:hover{
+            background-color: white;
+            color:#E50000;
+            transform: scale(1.02);
+         }
+@keyframes movingup {
+    0%   {font-size: 0%;}
+  100% {font-size:300%;}
+}   
+@keyframes flipin{
+    0%{
+        transform:rotateY(100deg);
+    }
+    50%{
+        transform:rotateY(0deg);
+    }
+    75%{
+        transform: rotateY(-35deg);
+    }
+    100%{
+        transform:rotateY(0deg);
+    }
+}
+@media screen and (max-width:1200px){
+            .n{
+                font-size: 20px;
+            }
+        }
+@media screen and (max-width:1000px){
+    .n{
+        font-size: 20px;
+        margin-bottom: 5px;
+        width:100%;
+    }
+    .l{
+        flex-direction: column;  
+      }
+      .i{
+        width:100%;
+      }
+}
+@media screen and (max-width: 870px) {
+            @keyframes movingup {
+                0% {
+                    font-size: 0%;
+                }
+                100% {
+                    font-size:200%;
+                }
+            }
+        }
+    /*payment page*/
+        #payh{
+            display:none;
+            /* height: 100svh;
+            background-color: black; */
+            overflow: hidden;
+        }
+        .payment{
+                width:100%;
+                display: flex;
+                justify-content: center;
+                background-image: url("../Images/465164.jpg");
+                background-size: 100% 100%;
+                padding-bottom: 3svh;
+                align-items: center;
+            }
+            .payl{
+                width:60%;
+                font-size: 35px;
+                color:white;
+                text-align: center;
+                font-family:cursive;
+                text-shadow: 3px 3px  red;
+                font-weight: 900;
+                background-size: 100% 100%;
+                margin-top: 15svh;
+            }
+            .pay1{
+                width:100%;
+                height:fit-content;
+                display:flex;
+                justify-content: space-evenly;
+                animation-name: flipin;
+                animation-fill-mode: forwards;
+                animation-duration: 1s;
+                margin-top: 10px;    
+            }
+            .pay2{
+                width:20%;
+                font-size: 27px;
+                display:flex;
+                color:white;
+                justify-content:start;
+                align-items: center;
+                padding: 20px;
+            }
+            .pay3{
+                width:60%;
+                border-bottom: 2px solid grey;
+                font-size: 19px;
+                display:flex;
+                justify-content:start;
+                padding-left: 20px;
+                text-shadow: none;
+                align-items:end;
+            }
+            .payr{
+                width:40%;
+                text-shadow: 3px 3px #E50000;
+                font-size: 32px;
+                color:white;
+                text-align: center;
+                font-family: cursive;
+                font-weight: 900;
+                display:flex;
+                flex-direction: column;
+                align-items: center; 
+            }
+            .qr{
+                width:40svh;
+                height:40svh;
+                background-image: url("../Images/qrcode.jpeg");
+                background-size: 100% 100%;
+                margin-top: 60px;
+            }
+            .button{
+                width:fit-content;
+                height:fit-content;
+                padding: 10px 20px;
+                margin-top: 40px;
+                color:white;
+                background-color: rgb(76, 75, 75);
+                border-radius: 5px;
+                transition: all 2s linear;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+            }
+            .button::before{
+                content:"";
+                width:100%;
+                height:100%;
+                background-color:#E50000;
+                transition: all 1s linear;
+                border-radius: 5px;                
+                position: absolute;
+                left:-150px;
+                top:0px;
+                z-index: -1;
+            }
+            .button:hover{
+                transform: scale(1.02);
+            }
+            .button:hover::before{
+                left:0px;
+            }
+            @keyframes flipin{
+    0%{
+        transform:rotateY(120deg);
+    }
+    50%{
+        transform:rotateY(0deg);
+    }
+    75%{
+        transform: rotateY(-35deg);
+    }
+    100%{
+        transform:rotateY(0deg);
+    }
+}
+@media screen and (max-width:1300px){
+                .pay1{
+                    flex-direction: column;
+                    align-items: start;
+                }
+                .pay2{
+                    width:40%;
+                }
+                .pay3{
+                    width:100%;
+                }
+                .qr{
+                    width:50%;
+                    font-size: 30px;
+                }
+            }
+            @media screen and (max-width:1100px){
+                .qr{
+                    width:60%;  
+                }
+            }
+            @media screen and (max-width:1000px){
+                .qr{
+                    width:70%;
+                    font-size: 25px;
+                }
+                .payment{
+                    flex-direction: column;
+                }
+                .payr{
+                    margin-top: 30px;
+                }
+            }
+        </style>    
+    </head>
+    <body>
+        <div class="whole">
+            <div class="header">
+                <div class="left1">
+                    <img src="../Images/man3.png" height="120%">
+                </div>
+                <a href="../index.html"><div class="op1">Home</div></a>
+        <a href="./PreviousYear.html"><div class="op1">Technical</div></a>
+        <a href="./sample2.html"><div class="op1">Non-tech</div></a>
+        <a href="./guest.html"><div class="op1">Guest</div></a>
+        <a href="./Galleryy.html"><div class="op1">Gallery</div></a>
+        <a href="./techspark.html"><div class="op1">Register</div></a>
+                <div class="right1">
+                
+            </div>
+                <div class="right2">
+                        <a href="./techspark.html"><button class="button-9" role="button">Register</button></a>
+                        <button class="button-10" role="button">Options	r</button>
+                </div>
+                                                      
+            </div>
+
+        <div class="register1">
+            <div class="p">
+                <div class="top">NON-TECHNICAL REGISTRATION</div>
+            </div>
+            <div class="down">
+                <div class="one">
+                    <div class="l">
+                        <div class="n">YOUR <span style="color:#E50000;">&nbsp;&nbsp;NAME&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="text" placeholder="Enter your name"name="NAME" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">YOUR <span style="color:#E50000">&nbsp;&nbsp;ROLLNO&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="text" placeholder="Enter your Roll Number"name="ROLLNO" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">YOUR <span style="color:#E50000">&nbsp;&nbsp;COLLEGE&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="text" placeholder="Enter your College name"name="COLLEGE" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">YOUR<span style="color:#E50000">&nbsp;&nbsp; EMAIL&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="email" placeholder="Enter your Email Id" name="EMAIL" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">YOUR<span style="color:#E50000">&nbsp;&nbsp;PHONE NO&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="number" placeholder="Enter your Phone Nunmber"name="PHONE" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">SELECT <span style="color:#E50000">&nbsp;&nbsp;EVENT&nbsp;&nbsp;:</span></div>
+                        <div class="i"><select name="Technical Events"onchange="Tech(event)"> 
+                            <option >Select a Non-technical event</option>
+                            <option value="CHOREO CLASH">CHOREO CLASH</option>
+                            <option value="SINGING SHOWDOWN">SINGING SHOWDOWN</option>
+                            <option value="TREASURE HUNT">TREASURE HUNT</option>
+                            <option value="STANDUP COMEDY">STANDUP COMEDY</option>
+                            <option value="AIR BALL">AIR BALL</option>
+                            <option value="ART EXHIBITION">ART EXHIBITION</option>
+                        </select></div>
+                    </div>    
+                </div>
+                    <button class="two" onclick="submit_data(data)">PAY 100/-</button>
+            </div>
+        </div>
+        <div id="payh">
+            <div class="payment">
+                <div class="payl">CHECK YOUR DETAILS
+                    <div class="pay1">
+                        <div class="pay2">NAME:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">ROLL NO:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">COLLEGE:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">EMAIL:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">PHONE NO:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">EVENT REGISTERED:</div>
+                        <div class="pay3"></div>
+                    </div>
+                </div>
+                <div class="payr">SCAN THE QRCODE
+                    <div class="qr"></div>
+                    <a href="./thank.html"><button class="button">DONE</button></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="../js/register.js"></script>
+    </body>
+</html>

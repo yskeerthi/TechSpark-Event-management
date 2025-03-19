@@ -1,0 +1,549 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../cssFiles/style.css">
+        <style>
+            *{
+    padding:0px;
+    margin: 0px;
+}
+            .register1{
+                width:100%;
+                background-color: black;
+                position:relative;  
+            }
+            .whole{
+            height:fit-content;
+            width:100%;
+           }
+            .p{
+                width:100%;
+                height:35svh;
+                background-image: url("../Images/A44T.gif");
+                background-size: 100% 100%;
+                position:relative;
+            }
+            .top{
+                width:100%;
+                height:18svh;
+    display:flex;
+    justify-content: center;
+    text-shadow: 5px 5px #E50000;
+    align-items:center;
+    color:rgb(193, 189, 189);
+    font-size: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name:movingup;
+   animation-duration: 0.7s;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+   position:absolute;
+   bottom:0px;
+}
+         .down{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            justify-content: center;
+            align-items: center;   
+         }
+         .one{
+         width:80%;
+         margin-top: 20px;
+         justify-content: space-between; 
+         }
+         .i select{
+            width:100%;
+            height:4svh;
+            box-shadow: 3px 3px 7px 4px grey;
+            color:#E50000;
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            background-color:rgb(158, 158, 158);
+            transition: all 0.5s ease;
+         }
+          .l:nth-child(odd){
+            width:100%;
+            height:fit-content;
+            display:flex;
+            margin-bottom: 20px;
+            justify-content: space-evenly;
+            animation-name: flipin;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;
+          }
+          .l:nth-child(even){
+            width:100%;
+            height:fit-content;
+            display:flex;
+            margin-bottom: 20px;
+            justify-content: space-evenly;
+            animation-name: flipin;
+            animation-fill-mode: forwards;
+            animation-duration: 1.2s;
+          }
+          .n{
+            width:20%;
+            display:flex;
+            justify-content: start;
+            align-items: center;
+            height: fit-content;
+            margin-left: 10px;
+            color:white;
+            font-size: 23px;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          }
+          .i{
+            width:70%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;    
+          }
+          .x{
+            width:70%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+          .t{
+            width:40%;
+            height:27svh; 
+          }
+          .t1{
+            width:100%;
+            height:20%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            background-color: #E50000;
+          }
+          .n3{
+            width:40%;
+            height:27svh;
+          }
+          .n1{
+            width:100%;
+            height:20%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #E50000;
+            color:white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+          }
+          .i input{
+            width:100%;
+            height:4svh;
+            box-shadow: 3px 3px 7px 4px grey;
+            color:#E50000;
+            font-size: 16px;
+            background-color:rgb(158, 158, 158);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            transition: all 0.5s ease;
+          }
+          .i input:hover{
+            box-shadow: 3px 3px 7px 4px #E50000;
+            transition: all 0.5s ease;
+            transform:scale(1.02); 
+          }
+          .i select:hover{
+            box-shadow: 3px 3px 7px 4px #E50000;
+            transition: all 0.5s ease;
+            transform:scale(1.02);
+          }
+         .two{
+            width:fit-content;
+            height:fit-content;
+            padding:10px 20px;
+            font-size: 32px;
+            font-weight: bold;
+            color:white;
+            box-shadow: 2px 2px 5px 2px #E50000;
+            background-color: #E50000;
+            transition: all linear 1s;
+            margin-top: 20px;
+            margin-bottom: 60px;
+         }
+         .two:hover{
+            background-color: white;
+            color:#E50000;
+            transform: scale(1.02);
+         }
+         .t2{
+            width:100%;
+            height:0%;
+            overflow: hidden;
+            transition: all 2s ease;
+            background-color: white;
+         }
+         .n2{
+            width:100%;
+            height:0%;
+            overflow: hidden;
+            transition: all 2s ease;
+            background-color: white;
+         } 
+         .t2 label{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            margin-top: 5px;
+         }
+         .t2 input{
+            margin-top: 7px;
+         }
+         .n2 input{
+            margin-top: 7px;
+         }
+         .n2 label{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            margin-top: 5px;
+         }        
+@keyframes movingup {
+    0%   {font-size: 0%;}
+  100% {font-size:350%;}
+}   
+@keyframes flipin{
+    0%{
+        transform:rotateY(100deg);
+    }
+    50%{
+        transform:rotateY(0deg);
+    }
+    75%{
+        transform: rotateY(-35deg);
+    }
+    100%{
+        transform:rotateY(0deg);
+    }
+}
+@media screen and (max-width:1000px){
+    .n{
+        font-size: 20px;
+        margin-bottom: 5px;
+        width:100%;
+    }
+    .t{
+        width:50%;
+    }
+    .t1{
+        border:1px solid white
+    }
+    .n3{
+        width: 50%;
+    }
+    .n1{
+        border:1px solid white
+    }
+    .l{
+        flex-direction: column;  
+      }
+      .i{
+        width:100%;
+      }
+}
+@media screen and (max-width: 870px) {
+            @keyframes movingup {
+                0% {
+                    font-size: 0%;
+                }
+                100% {
+                    font-size:250%;
+                }
+            }
+            .t2{
+                font-size: 16px;
+            }
+        }
+        /*payment page*/
+        #payh{
+            display:none;
+            /* height: 100svh;
+            background-color: black; */
+            overflow: hidden;
+        }
+        .payment{
+                width:100%;
+                display: flex;
+                justify-content: center;
+                background-image: url("../Images/465164.jpg");
+                padding-bottom: 3svh;
+                background-size: 100% 100%;
+                align-items: center;
+            }
+            .payl{
+                width:60%;
+                font-size: 35px;
+                color:white;
+                text-align: center;
+                font-family:cursive;
+                font-weight: 900;
+                text-shadow: 3px 3px red;
+                background-size: 100% 100%;
+                margin-top: 15svh;
+
+
+            }
+            .pay1{
+                width:100%;
+                height:fit-content;
+                display:flex;
+                justify-content: space-evenly;
+                animation-name: flipin;
+                animation-fill-mode: forwards;
+                animation-duration: 1s;
+                margin-top: 10px;
+            }
+            .pay2{
+                width:20%;
+                font-size: 27px;
+                display:flex;
+                justify-content:start;
+                align-items: center;
+                padding: 20px;
+            }
+            .pay3{
+                width:60%;
+                border-bottom: 2px solid grey;
+                font-size: 19px;
+                display:flex;
+                justify-content:start;
+                text-shadow: none;
+                align-items:end;
+            }
+            .payr{
+                width:40%;
+                text-shadow: 3px 3px #E50000;
+                font-size: 32px;
+                text-align: center;
+                font-family: cursive;
+                color:white;
+                font-weight: 900;
+                display:flex;
+                flex-direction: column;
+                align-items: center;                
+            }
+            .qr{
+                width:40svh;
+                height:40svh;
+                background-image: url("../Images/qrcode.jpeg");
+                background-size: 100% 100%;
+                margin-top: 60px;
+            }
+            .button{
+                width:fit-content;
+                height:fit-content;
+                padding: 10px 20px;
+                /* border: 2px solid white; */
+                margin-top: 40px;
+                color:white;
+                background-color: rgb(76, 75, 75);
+                border-radius: 5px;
+                transition: all 2s linear;
+                /* box-shadow: 5px 5px 10px 5px rgb(76, 75, 75) ; */
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+            }
+            .button::before{
+                content:"";
+                width:100%;
+                height:100%;
+                /* padding: 10px 20px; */
+                background-color:#E50000;
+                transition: all 1s linear;
+                border-radius: 5px;
+                /* box-shadow: 5px 5px 10px 5px #E50000; */
+                
+                position: absolute;
+                left:-150px;
+                top:0px;
+                z-index: -1;
+            }
+            .button:hover{
+                transform: scale(1.02);
+            }
+            .button:hover::before{
+                left:0px;
+            }
+            @keyframes flipin{
+    0%{
+        transform:rotateY(120deg);
+    }
+    50%{
+        transform:rotateY(0deg);
+    }
+    75%{
+        transform: rotateY(-35deg);
+    }
+    100%{
+        transform:rotateY(0deg);
+    }
+}
+@media screen and (max-width:1300px){
+                .pay1{
+                    flex-direction: column;
+                    align-items: start;
+                }
+                .pay2{
+                    width:40%;
+                }
+                .pay3{
+                    width:100%;
+                }
+                .qr{
+                    width:50%;
+                    font-size: 30px;
+                }
+            }
+            @media screen and (max-width:1100px){
+                .qr{
+                    width:60%
+                }
+            }
+            @media screen and (max-width:900px){
+                .qr{
+                    width:70%;
+                    font-size: 25px;
+                }
+                .payment{
+                    flex-direction: column;
+                }
+                .payr{
+                    margin-top: 30px;
+                }
+            }
+
+    
+        </style>
+        
+    </head>
+    <body>
+        <div class="whole">
+            <div class="header">
+                <div class="left1">
+                    <img src="../Images/man3.png" height="120%">
+                </div>
+                <a href="../index.html"><div class="op1">Home</div></a>
+                <a href="./PreviousYear.html"><div class="op1">Technical</div></a>
+                <a href="./sample2.html"><div class="op1">Non-tech</div></a>
+                <a href="./guest.html"><div class="op1">Guest</div></a>
+                <a href="./Galleryy.html"><div class="op1">Gallery</div></a>
+                <a href="./techspark.html"><div class="op1">Register</div></a>
+                <div class="right1">
+                
+            </div>
+                <div class="right2">
+                        <a href="./techspark.html"><button class="button-9" role="button">Register</button></a>
+                        <button class="button-10" role="button">Options	r</button>
+                </div>
+                                                      
+            </div>
+        <div class="register1">
+            <div class="p">
+                <div class="top">COMBO REGISTRATION</div>
+            </div>
+            <div class="down">
+                <div class="one">
+                    <div class="l">
+                        <div class="n">YOUR<span style="color:#E50000;">&nbsp;&nbsp;NAME&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="text" placeholder="Enter your name"name="NAME" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">YOUR<span style="color:#E50000">&nbsp;&nbsp;ROLLNO&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="text" placeholder="Enter your Roll Number"name="ROLLNO" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">YOUR<span style="color:#E50000">&nbsp;&nbsp;COLLEGE&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="text" placeholder="Enter your College name"name="COLLEGE" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">YOUR<span style="color:#E50000">&nbsp;&nbsp; EMAIL&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="email" placeholder="Enter your Email Id"name="EMAIL" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">YOUR<span style="color:#E50000">&nbsp;&nbsp;PHONE NO&nbsp;&nbsp;:</span></div>
+                        <div class="i"><input type="number" placeholder="Enter your Phone Nunmber"name="PHONE" onchange="common(event)"></div>
+                    </div>
+                    <div class="l">
+                        <div class="n">SELECT<span style="color:#E50000">&nbsp;&nbsp;EVENT&nbsp;&nbsp;:</span></div>
+                            
+                        <div class="x">
+                                <div class="t" onmouseleave="bye()">
+                                    <div class="t1" onclick="hide()">TECHNICAL EVENTS</div>
+                                    <div class="t2">
+                                        &nbsp;&nbsp;<input class="cb1" type="checkbox"value="CODE CARNIVAL"name="CODE CARNIVAL"onchange="common1('cb1')" /> &nbsp;&nbsp;&nbsp;&nbsp;<label>CODE CARNIVAL</label><br>
+                                        &nbsp;&nbsp;<input class="cb2" type="checkbox"value="QUIZ"name="QUIZ"onchange="common1('cb2')" /> &nbsp;&nbsp;&nbsp;&nbsp;<label>QUIZ</label><br>
+                                        &nbsp;&nbsp;<input class="cb3" type="checkbox"value="IDEA PRESENTATION"name="IDEA PRESENTATION" onchange="common1('cb3')"/> &nbsp;&nbsp;&nbsp;&nbsp;<label>IDEA PRESENTATION</label><br>
+                                        &nbsp;&nbsp;<input class="cb4" type="checkbox"value="PAPERENTATION" name="PAPERENTATION"onchange="common1('cb4')"  /> &nbsp;&nbsp;&nbsp;&nbsp;<label>PAPER PRESENTATION</label><br>
+                                        &nbsp;&nbsp;<input class="cb5" type="checkbox"value="JUST A MINUTE"name="JUST A MINUTE"onchange="common1('cb5')" /> &nbsp;&nbsp;&nbsp;&nbsp;<label>JUST A MINUTE</label><br>
+                                        &nbsp;&nbsp;<input class="cb6" type="checkbox"value="CODE DEBUG" name="CODE DEBUG"onchange="common1('cb6')" /> &nbsp;&nbsp;&nbsp;&nbsp;<label>CODE DEBUG</label>
+                                    </div>
+                                </div>
+                                <div class="n3"onmouseleave="bye1()">
+                                    <div class="n1" onclick="hide1()">NON-TECHNICAL EVENTS</div>
+                                    <div class="n2">
+                                        &nbsp;&nbsp;<input class="cd1" type="checkbox"value="CHOREO CLASH"name="CHOREO CLASH"onchange="common2('cd1')" /> &nbsp;&nbsp;&nbsp;&nbsp;<label>CHOREO CLASH</label><br>
+                                        &nbsp;&nbsp;<input class="cd2"type="checkbox"value="SINGING SHOWDOWN"name="SINGING SHOWDOWN"onchange="common2('cd2')" /> &nbsp;&nbsp;&nbsp;&nbsp;<label>SINGING SHOWDOWN</label><br>
+                                        &nbsp;&nbsp;<input class="cd3"type="checkbox" value="TREASURE HUNT"name="TREASURE HUNT"onchange="common2('cd3')" /> &nbsp;&nbsp;&nbsp;&nbsp;<label>TREASURE HUNT</label><br>
+                                        &nbsp;&nbsp;<input class="cd4"type="checkbox"value="STANDUP COMEDY"name="STANDUP COMEDY"onchange="common2('cd4')"/> &nbsp;&nbsp;&nbsp;&nbsp;<label>STANDUP COMEDY</label><br>
+                                        &nbsp;&nbsp;<input class="cd5"type="checkbox"value="AIR BALL"name="AIR BALL"onchange="common2('cd5')"  /> &nbsp;&nbsp;&nbsp;&nbsp;<label>AIR BALL</label><br>
+                                        &nbsp;&nbsp;<input class="cd6"type="checkbox"value="ART EXHIBITION" name="ART EXHIBITION"onchange="common2('cd6')" /> &nbsp;&nbsp;&nbsp;&nbsp;<label>ART EXHIBITION</label>
+                                    </div>
+                                </div>
+
+                        </div> 
+                    </div>    
+            </div>
+            <!-- <a href="payment.html"> -->
+                <button class="two" onclick="submit_data(data)">PAY</button>
+            </div>
+        </div>
+        <div id="payh">
+            <div class="payment">
+                <div class="payl">CHECK YOUR DETAILS
+                    <div class="pay1">
+                        <div class="pay2">NAME:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">ROLL NO:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">COLLEGE:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">EMAIL:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">PHONE NO:</div>
+                        <div class="pay3"></div>
+                    </div>
+                    <div class="pay1">
+                        <div class="pay2">EVENT REGISTERED:</div>
+                        <div class="pay3"></div>
+                    </div>
+                </div>
+                <div class="payr">SCAN THE QRCODE
+                    <div class="qr"></div>
+                    <a href="./thank.html"><button class="button">DONE</button></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="../js/register2.js">
+        </script>
+    </body>
+</html>

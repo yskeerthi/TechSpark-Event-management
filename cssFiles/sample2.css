@@ -1,0 +1,512 @@
+body {
+    min-height: 95vh;
+    background: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Fira Mono', monospace;
+}
+.hello1{
+    width:100%;
+    height:20svh;
+   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+}
+.butt{
+    width:100%;
+    height:100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+.cards {
+    width: 100%;
+    max-width: 1200px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content:space-evenly;
+    align-items: center; 
+    margin-top: 100px;
+}
+
+.card {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    width: 300px; 
+    height: 300px;
+    /* background-image: url("c:\Users\hp\Pictures\dance.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    box-shadow: 30px 30px 40px #141313, -30px -30px 40px #1c1919;
+    transform: scale(1.05);
+    margin-top: 20px;
+}
+.register-btn {
+    display:flex;
+    justify-content:center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left:34%;
+}
+
+.register-btn:hover {
+    background-color: darkred;
+}
+
+.card:hover .register-btn {
+    display: block;
+}
+.hello{
+    background-image: url("../Images/dance.avif");
+    background-size: 100% 100%;
+    margin-top:5%;
+}
+
+.card-text {
+    opacity: 0;
+    position: relative;
+    top: 80px;
+    font-size: 120%;
+}
+
+.card:hover {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 30px 30px 40px #141313, -30px -30px 40px #1c1919;
+    animation: large .7s ease-in-out forwards;
+}
+
+@keyframes large {
+    100% {
+        transform: scale(.9);
+    }
+}
+
+.card:hover .card-text {
+    opacity: 1;
+}
+
+.card:hover .colour {
+    animation: move .7s ease-in-out forwards;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(-45deg) translateY(-85px);
+    }
+    100% {
+        transform: rotate(-45deg) translateY(0px);
+    }
+}
+
+.card:hover .colour-bottom {
+    animation: move1 .7s ease-in-out forwards;
+}
+
+@keyframes move1 {
+    0% {
+        transform: rotate(-45deg) translateY(90px);
+    }
+    100% {
+        transform: rotate(-45deg) translateY(0px);
+    }
+}
+a{
+	text-decoration: none;
+	color: white;
+	transition: all 0.5s;
+}
+
+.nezuko {
+    background-image: url("../Images/singing.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:5%;
+}
+
+.nezuko .colour {
+    background: rgb(227,121,130);
+    background: linear-gradient(125deg, rgba(227,121,130,1) 28%, rgba(172,24,69,1) 89%);
+}
+
+.nezuko .colour::before {
+    background: rgba(172,24,69,1);
+}
+
+.nezuko .colour-bottom {
+    background: rgba(128,23,34,1);
+}
+
+.nezuko .colour-bottom::before {
+    background: rgb(128,23,34);
+    background: linear-gradient(125deg, rgba(128,23,34,1) 40%, rgba(60,29,40,1) 66%);
+}
+
+.zenitsu {
+    background-image: url("../Images/standup\ comedy.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:5%;
+}
+
+.zenitsu .colour {
+    background: rgb(254,241,163);
+    background: linear-gradient(125deg, rgba(254,241,163,1) 40%, rgba(254,233,88,1) 59%);
+}
+
+.zenitsu .colour::before {
+    background: rgba(254,233,88,1);
+}
+
+.zenitsu .colour-bottom {
+    background: rgb(224,153,45);
+}
+
+.zenitsu .colour-bottom::before {
+    background: rgb(224,153,45);
+    background: linear-gradient(125deg, rgba(224,153,45,1) 40%, rgba(176,123,0,1) 60%);
+}
+
+.airball {
+    background-image: url("../Images/AIRBALL.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:6%;
+}
+
+.airball .colour {
+    background: rgb(227,121,130);
+    background: linear-gradient(125deg, rgba(227,121,130,1) 28%, rgba(172,24,69,1) 89%);
+}
+
+.airball .colour::before {
+    background: rgba(172,24,69,1);
+}
+
+.airball .colour-bottom {
+    background: rgba(128,23,34,1);
+}
+
+.airball .colour-bottom::before {
+    background: rgb(128,23,34);
+    background: linear-gradient(125deg, rgba(128,23,34,1) 40%, rgba(60,29,40,1) 66%);
+}
+
+.artexhibition {
+    /* background-image: url("https://c1.wallpaperflare.com/preview/153/458/359/art-gallery-gallery-museum-exhibition.jp"); */
+    background-image: url("../Images/ART\ gallery.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:6%;
+}
+
+.artexhibition .colour {
+    background: rgb(227,121,130);
+    background: linear-gradient(125deg, rgba(227,121,130,1) 28%, rgba(172,24,69,1) 89%);
+}
+
+.artexhibition .colour::before {
+    background: rgba(172,24,69,1);
+}
+
+.artexhibition .colour-bottom {
+    background: rgba(128,23,34,1);
+}
+
+.artexhibition .colour-bottom::before {
+    background: rgb(128,23,34);
+    background: linear-gradient(125deg, rgba(128,23,34,1) 40%, rgba(60,29,40,1) 66%);
+}
+
+.treasurehunt {
+    /* background-image: url("https://media.istockphoto.com/id/1086794928/photo/vintage-map-and-accessories.jpg?s=612x612&w=0&k=20&c=SuQsciOA8yvNYsEnqh64TWmed7rASoxNFi3Mxm4VhAY="); */
+    background-image: url("../Images/treasure\ hunt.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:6%;
+}
+
+.treasurehunt .colour {
+    background: rgb(227,121,130);
+    background: linear-gradient(125deg, rgba(227,121,130,1) 28%, rgba(172,24,69,1) 89%);
+}
+
+.treasurehunt .colour::before {
+    background: rgba(172,24,69,1);
+}
+
+.treasurehunt .colour-bottom {
+    background: rgba(128,23,34,1);
+}
+
+.treasurehunt .colour-bottom::before {
+    background: rgb(128,23,34);
+    background: linear-gradient(125deg, rgba(128,23,34,1) 40%, rgba(60,29,40,1) 66%);
+}
+/* .nontech{ */
+    /* width:100%;
+    height:12%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative; */
+/* } */
+.nonTech{
+    width:100%;
+    height:12%;
+   
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    position: relative;
+    margin-top:6%
+}
+.movingg{ 
+    width:fit-content;
+    height: fit-content;
+    color:white;
+    font-size: 3rem;
+    text-shadow: 1px 2px 2px  red;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    position: absolute;
+    margin-top: 100px;
+}
+.Nontechi{
+    width:56%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+}
+.Nontechi::before{
+    content: "J";
+    color:red;
+    text-shadow: 1px 2px 2px  rgb(248, 239, 239);
+}
+.Rounds::before{
+    content:"F";
+    color:red;
+    text-shadow: 1px 3px 2px  rgb(233, 240, 243);
+
+}
+.NontechEve{
+    width:100%;
+    background-color: black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* .movingg{ 
+    width:fit-content;
+    height: fit-content;
+    color:white;
+    font-size: 3rem;
+    text-shadow: 1px 2px 2px  red;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    position: absolute;
+} */
+@keyframes anime{
+    0%{
+       left:1%;
+       
+    }
+    50%{
+        left:70%;
+    }
+    100%{
+        left:39%;
+        
+    }
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#101010, #1f1f1f1f);
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    position: fixed;
+	z-index: 10;
+  
+	
+}
+.left1{
+    width: 300px;
+    height:100px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  
+    
+}
+.op1{
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    font-family: "Gill Sans", sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    transition-property: width;
+    transition: all 0.2s;
+}
+.op1:hover{
+    border-bottom: 2px solid red;
+    font-size: 18px;
+}
+.right1{
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    display: none;
+}
+@media screen and (max-width:800px) {
+       .right1{
+        display: flex;
+       }
+       .op1{
+        display:flex;
+       }
+       .button-9{
+          display:flex;
+       }
+       .left1 img{
+              height: 100%;
+       }
+	   
+	}
+    
+.right2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 26%;
+}
+
+.button-9,.button-10{
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family:sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.nonTech .header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#101010, #1f1f1f1f);
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    position: fixed;
+	z-index: 10;
+    margin-top: -5%;
+ 
+	
+}
+.button-10{
+	display: none;
+}
+
+.navbar{
+    margin-top:16%;
+    margin-left: -13%;
+    display: none;
+}
+
+
+@media screen and (max-width:1200px)
+{
+    .navbar{
+        display:none;
+    }
+    .button-10{
+        display:block;
+        /* margin-right: 20%; */
+       
+    }
+    .button-9{
+        display:none;
+    }
+    .op1{
+        display: none;
+    }
+}
+@media screen  and (max-width:500px)
+{
+    .navbar{
+        margin-top:8%;
+       
+    }
+    
+}
+@media screen and (min-width:1001px)
+{
+    .navbar{
+        margin-left:200000px;
+    }
+}

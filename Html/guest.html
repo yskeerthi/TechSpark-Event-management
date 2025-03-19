@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>guests</title>
+	<link rel="stylesheet" type="text/css" href="../cssFiles/style2.css">
+	<link rel="stylesheet" type="text/css" href="../cssFiles/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+	<div class="navbar">
+		
+
+		<!-- <div class="a1"><a href="../index.html">Home</a></div><br>
+        <div class="a1"><a href="/Html/PreviousYear.html">Tech</a></div><br>
+        <div class="a1"><a href="/Html/sample2.html">Non Tech</a></div><br>
+        <div class="a1"><a href="/Html/guest.html">Guests</a></div><br>
+        <div class="a1"><a href="/Html/Galleryy.html">Gallery</a></div><br>
+        <div class="a1"><a href="/Html/techspark.html">Register</a></div><br>
+         -->
+
+		<div class="a1"><a href="../index.html">Home</a></div><br>
+        <div class="a1"><a href="./PreviousYear.html">Tech</a></div><br>
+        <div class="a1"><a href="./sample2.html">Non Tech</a></div><br>
+        <div class="a1"><a href="./guest.html">Guests</a></div><br>
+        <div class="a1"><a href="./Galleryy.html">Gallery</a></div><br>
+        <div class="a1"><a href="./techspark.html">Register</a></div><br>
+        
+</div>
+	<div class="header">
+		<div class="left1">
+			<img src="./man3.png" height="120%">
+		</div>
+		<a href="../index.html"><div class="op1">Home</div></a>
+        <a href="./PreviousYear.html"><div class="op1">Technical</div></a>
+        <a href="./sample2.html"><div class="op1">Non-tech</div></a>
+        <a href="./guest.html"><div class="op1">Guest</div></a>
+        <a href="./Galleryy.html"><div class="op1">Gallery</div></a>
+        <a href="./techspark.html"><div class="op1">Register</div></a>
+		<div class="right1">
+		
+	</div>
+		<div class="right2">
+				<a href="./techspark.html"><button class="button-9" role="button">Register</button></a>
+				<button class="button-10" role="button" onclick="funy1()">Options</button>
+
+
+				<!-- <div class="navbar">
+					<div class="a1"><a href="">Home</a></div><br>
+					<div class="a1"><a href="#HomeSec">About</a></div><br>
+					<div class="a1"><a href="./PreviousYear.html">Tech</a></div><br>
+					<div class="a1"><a href="./sample2.html">Non Tech</a></div><br>
+					<div class="a1"><a href="./guest.html">Guests</a></div><br>
+					<div class="a1"><a href="./Galleryy.html">Gallery</a></div><br>
+					<div class="a1"><a href="./techspark.html">Register</a></div><br>
+					<div class="a1"><a href="#footer-main">Contact</a></div>
+		</div> -->
+		</div>
+											  
+	</div>
+	    <div class="heading-guest">
+	    	  <span><b>Our Guests</b></span>
+	    </div>
+           <div class="guest-main">
+           	       <div class="guest-1">
+           	       	   <div class="pic img1"></div>
+           	       	   <div class="info"><h2>Ratan Tata</h2>
+           	       	      <span class="info1">CEO of Tata Group</span></div>
+           	       </div>
+           	       <div class="guest-1">
+           	       	<div class="pic img2"></div>
+           	       	   <div class="info"><h2>Elon Mask</h2>
+           	       	   	<span class="info1">CEO of Tesla Motors</span>
+           	       	   </div>
+           	       </div>
+           	       <div class="guest-1">
+           	       	<div class="pic img3"></div>
+           	       	   <div class="info"><h2>Anirudh Ravichander
+</h2>
+           	       	   	<span class="info1">Indian composer</span></div>
+           	       </div>
+           	       <div class="guest-1">
+           	       	<div class="pic img4"></div>
+           	       	   <div class="info"><h2>Sid Sriram</h2>
+           	       	   	<span class="info1">Indain Musician</span></div>
+           	       </div>
+           </div>
+
+
+
+
+		   <script>
+
+			function navigateToPage(select) {
+							 var selectedValue = select.value;
+						   if (selectedValue) {
+							 window.location.href = selectedValue;
+							}
+					   }
+					   var c1=1;
+					   function funy1(){
+						   if(c1==1){
+						  var a=document.getElementsByClassName("navbar")[0];
+						  a.style.display="block";
+						  c1++;
+
+					  }
+					  else{
+							var a=document.getElementsByClassName("navbar")[0];
+						  a.style.display="none";
+						  c1--;
+					  }
+
+					 }
+					 var x = window.matchMedia("(max-width: 700px)");
+					 x.addEventListener("change", function() {
+					  myFunction(x);
+					   });
+					 function myFunction(x) { 
+					   if (x.matches) { 
+								  console.log("hello");
+					   
+							  } else {
+								   var a=document.getElementsByClassName("navbar")[0];
+						  a.style.display="none"
+							   }
+							   }
+
+</script>
+</body>
+</html>

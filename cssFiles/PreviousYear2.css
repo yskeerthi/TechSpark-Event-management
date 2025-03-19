@@ -1,0 +1,380 @@
+body{
+    margin:0px;
+    /* background-image: url("./QuizImg.jpg"); */
+    background-size: 100% 100%;
+}
+.hello{
+    width:100%;
+    height:10svh;
+    background-color: black;
+}
+.Techtrio{
+    width:100%;
+    height:12%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    position: relative;
+    /* background-image: url("./QuizImg.jpg");
+    background-size: 100% 100%; */
+}
+.moving{
+   
+    width:fit-content;
+    height: fit-content;
+    color:white;
+    font-size: 3rem;
+    text-shadow: 1px 2px 2px  red;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+   
+    position: absolute;
+    
+}
+.Techi{
+    width:56%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Techi::before{
+    content: "T";
+    color:red;
+    text-shadow: 1px 2px 2px  rgb(239, 233, 233);
+}
+.Roundy{
+    width:43%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Roundy::before{
+    content:"R";
+    color:red;
+    text-shadow: 1px 3px 2px  rgb(233, 240, 243);
+
+}
+
+
+.TechEve{
+    width:100%;
+    background-color: black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url("../Images/redy.jpg");
+    background-size: 100% 100%;
+}
+
+ @keyframes anime{
+    0%{
+       left:1%;
+       
+    }
+    50%{
+        left:70%;
+    }
+    100%{
+        left:39%;
+        
+    }
+
+}
+
+.flipParent{
+    width: 350px;
+    height:300px;
+    margin-left:2%;
+    margin-right: 2%;   
+    margin-top: 3%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    position: relative;
+    perspective: 1000px;
+    display: flex;
+    justify-self:center;
+    align-items: center;
+
+} 
+.coder{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px 1px rgb(233, 229, 229);
+    position:absolute;
+    backface-visibility: hidden;
+    transition: all 3s;
+    transform-style: preserve-3d;
+    transform:rotateY(0deg);
+}
+
+
+.flipParent:hover .coder{
+    transform: rotateY(-180deg);
+}
+.flipParent:hover .coderBack{
+    transform:rotateY(0deg);
+}
+.codeImg{
+    width:100%;
+    height:80%;
+    color:white;
+    border-radius: 10px;
+
+}
+#codeImgid1{
+    background-image: url("../Images/Codingprev.jpg");
+    background-size: 100% 100%;
+}
+#codeImgid2{
+    background-image: url("../Images/QuizImg.jpg");
+    background-size: 100% 100%;
+}
+#codeImgid3{
+    background-image:url("../Images/ppp.jpg");
+    background-size: 100% 100%;
+}
+#codeImgid4{
+    background-image: url("../Images/post.jpg");
+    background-size: 100% 100%;
+}
+#codeImgid5{
+    background-image: url("../Images/jam.jpg");
+    background-size: 100% 100%;
+}
+#codeImgid6{
+    background-image: url("../Images/debug.jpg");
+    background-size: 100% 100%;
+}
+.codeText{
+    width:100%;
+    height:20%;
+    color:white;
+    display: flex;
+    text-shadow: 2px 2px 2px rgb(255, 60, 0);
+}
+.content1{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    /* border: 1px solid green; */
+}
+.RegisterBut{
+    width:35%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 9999; */
+    color:white;
+}
+.butt{
+     width:35%;
+     height:20%;
+     margin-top: 2%;
+}
+button{
+    width:100%;
+    height:70%;
+    background-color: rgb(246, 48, 13);
+    color:rgb(246, 240, 240);
+    font-size: 120%;
+    border-radius: 20px;
+}
+.coderBack{
+    width:100%;
+    height:100%;
+    position:absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    transform-style: preserve-3d;
+    transform:rotateY(180deg);
+    /* background-color: rgb(50, 52, 52); */
+    /* background-color: red; */
+    background-image: url("../Images/deco1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all 3s;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.orgParent{
+    width: 60%;
+    height:40%;
+    border:1px solid white;
+    /* box-shadow: 1px 1px 2px rgb(252, 248, 248); */
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   /* border-radius:25px; */
+   margin-top:20%;
+}
+.ven{
+    width:100%;
+    height:33%;
+    color:white;
+    /* border:1px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130%;
+    text-shadow: 1px 1px 2px  gold;
+}
+.ven::before{
+    content:"V";
+    color:rgb(234, 13, 13);
+    font-size: 110%;
+    text-shadow: 1px 1px 2px  gold;
+}
+.Room{
+    width:100%;
+    height:33%;
+    color:white;
+    /* border:1px solid gold; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 130%;
+    text-shadow: 1px 1px 2px  gold;
+}
+.Room::before{
+    content:"R";
+    color:red;
+    font-size: 110%;
+}
+.TeamSize{
+    color:white;
+    width:100%;
+    height:33%;
+    /* border:1px solid gold; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 130%;
+    text-shadow: 1px 1px 2px  gold;
+}
+.TeamSize:before{
+    content:"T";
+    color:red;
+    font-size: 110%;
+}
+@media screen and (max-width:1000px){
+   
+    .Techi{
+
+        font-size: 80%;
+    }
+    .Roundy{
+        width:30%;
+        height: 50%;
+        font-size: 70%;
+
+    }
+    /* @keyframes anime{
+        0%{
+            left:1%;
+            
+         }
+         50%{
+             left:43%;
+         }
+         100%{
+             left:26%;
+             
+         }   
+    } */
+}
+@media screen and (max-width:1000px){
+
+    @keyframes anime{
+        0%{
+            left:1%;
+            
+         }
+         50%{
+             left:55%;
+         }
+         100%{
+             left:26%;
+             
+         }  
+        }
+}
+@media screen and (max-width:600px){
+
+    @keyframes anime{
+        0%{
+            left:1%;
+            
+         }
+         50%{
+             left:37%;
+         }
+         100%{
+             left:24%;
+             
+         }  
+        }
+}
+.navbar{
+    display:none;
+   
+}
+.a1{
+    display: none;
+}
+@media screen and (max-width:1000px)
+{
+    .navbar{
+        display:block;
+        color:white;
+    margin-top:2%;
+    display: block;
+    margin-left: 15%;
+    }
+    .a1{
+        display: block;
+    }
+    .button-10{
+        display:block;
+       
+    }
+    .button-9{
+        display:none;
+    }
+    .op1{
+        display: none;
+    }
+
+}
+/* @media screen  and (max-width:500px)
+{
+    .navbar{
+        margin-top:8%;
+       
+    }
+    
+} */
+@media screen and (min-width:1001px)
+{
+    .navbar{
+        margin-left:200000px;
+    }
+    .a1{
+        margin-left:200000px;   
+    }
+}

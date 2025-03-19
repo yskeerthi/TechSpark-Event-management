@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../cssFiles/sample2.css">
+    <!-- <link rel="Stylesheet" href="./style.css"> -->
+    <title>Slider</title>
+</head>
+<body>
+    
+    <div class="nonTech">
+       
+        <div class="header">
+            <div class="left1">
+              <img src="../Images/man3.png" height="120%">
+            </div>
+            <a href="../index.html"><div class="op1">Home</div></a>
+        <a href="./PreviousYear.html"><div class="op1">Technical</div></a>
+        <a href="./sample2.html"><div class="op1">Non-tech</div></a>
+        <a href="./guest.html"><div class="op1">Guest</div></a>
+        <a href="./Galleryy.html"><div class="op1">Gallery</div></a>
+        <a href="./techspark.html"><div class="op1">Register</div></a>
+            <div class="right1">
+            
+          </div>
+                <div class="right2">
+                        <a href="./techspark.html"><button class="button-9" role="button">Register</button></a>
+            <button class="button-10" role="button" onclick="funy1()">Options</button>
+                </div>
+
+
+                
+							<div class="navbar">
+								<div class="a1"><a href="../index.html">Home</a></div><br>
+        <div class="a1"><a href="./PreviousYear.html">Tech</a></div><br>
+        <div class="a1"><a href="./sample2.html">Non Tech</a></div><br>
+        <div class="a1"><a href="./guest.html">Guests</a></div><br>
+        <div class="a1"><a href="./Galleryy.html">Gallery</a></div><br>
+        <div class="a1"><a href="./techspark.html">Register</a></div><br>
+					</div>
+                                                      
+          </div>
+        
+        <div class="movingg">
+          <div class="Nontechi"><b>oin&nbsp;us&nbspfor</b></div>&nbsp&nbsp;
+          <div class="Rounds"><b>un..!!</b></div>
+        </div>
+        </div>
+    <div class="container">
+        <div class="cards">
+            <div class="card hello">
+                <div class="colour"></div>
+                <div class="card-text">
+                    <h3>Choreo Clash</h3>
+                    <p>Venue: Auditorium<br> Room No: 101 <br> Time: 10:00 am</p>
+                    <a href="./techspark.html"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="colour-bottom"></div>
+            </div>
+            <div class="card nezuko">
+                <div class="colour"></div>
+                <div class="card-text">
+                    <h3>Singing Showdown</h3>
+                    <p>Venue: Music Hall <br> Room No: 202 <br> Time: 3:00pm</p>
+                    <a href="./techspark.html"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="colour-bottom"></div>
+            </div>
+            <div class="card zenitsu">
+                <div class="colour"></div>
+                <div class="card-text">
+                    <h3>Stand Up Comedy</h3>
+                    <p>Venue: Comedy Club<br> Room No: 303<br> Time: 8:00pm</p>
+                    <a href="./techspark.html"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="colour-bottom"></div>
+            </div>
+            <div class="card airball">
+                <div class="colour"></div>
+                <div class="card-text">
+                    <h3>Air Ball</h3>
+                    <p>Venue: Basketball Ground <br> Room No: 102 <br> Time: 4:00pm</p>
+                    <a href="./techspark.html"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="colour-bottom"></div>
+            </div>
+            <div class="card artexhibition">
+                <div class="colour"></div>
+                <div class="card-text">
+                    <h3>Art Exhibition</h3>
+                    <p>Venue: Art Gallery<br> Room No: 502 <br> Time: 7:00pm</p>
+                    <a href="./techspark.html"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="colour-bottom"></div>
+            </div>
+            <div class="card treasurehunt">
+                <div class="colour"></div>
+                <div class="card-text">
+                    <h3>Treasure Hunt</h3>
+                    <p>Venue: Campus Grounds <br> Room No: 202<br> Time: 11:00am</p>
+                    <a href="./techspark.html"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="colour-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+                          function navigateToPage(select) {
+                                           var selectedValue = select.value;
+                                         if (selectedValue) {
+                                           window.location.href = selectedValue;
+                                          }
+                                     }
+                                     var c1=1;
+									 function funy1(){
+                                         if(c1==1){
+										var a=document.getElementsByClassName("navbar")[0];
+                                        a.style.display="block";
+                                        c1++;
+
+                                    }
+                                    else{
+                                    	  var a=document.getElementsByClassName("navbar")[0];
+                                        a.style.display="none";
+                                        c1--;
+                                    }
+
+							       }
+							       var x = window.matchMedia("(max-width: 700px)");
+							       x.addEventListener("change", function() {
+                                    myFunction(x);
+                                     });
+							       function myFunction(x) { 
+                                     if (x.matches) { 
+                                                console.log("hello");
+                                     
+                                            } else {
+                                                 var a=document.getElementsByClassName("navbar")[0];
+                                        a.style.display="none"
+                                             }
+                                             }
+
+    </script>
+</body>
+</html>

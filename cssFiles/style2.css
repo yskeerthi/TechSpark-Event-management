@@ -1,0 +1,133 @@
+body{
+	margin: 0px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.guest-main{
+	  width: 100%;
+	  height: 90svh;
+	  background: #0A111F;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-items: center;
+	  gap: 20px;
+	  font-family: "Poppins", sans-serif;
+}
+.guest-1{
+	  width: 270px;
+	  height: 370px;
+	  
+	  transition: all 0.2s;
+	  margin-bottom: 9%;
+	  margin-top: 0;
+	 
+}
+.guest-1:hover{
+	 width: 300px;
+	  height: 400px;
+	  background: grey;
+}
+.guest-1:hover > .pic{
+	   height: 70%;
+	   opacity: 0.5;
+}
+.guest-1:hover > .info {
+	   height: 30%;
+}
+.guest-1:hover > .info > .info1{
+	  display: block;
+}
+
+.pic{
+	   width: 100%;
+	   height: 80%;
+	   background: green;
+	   transition: all 0.4s;
+
+}
+.info{
+	  width: 100%;
+	  height: 20%;
+	  background: black;
+	  transition: all 0.4s;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  color: white;
+	  flex-direction: column;
+}
+.img1{
+	background-image: url("../Images/tata.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.img3{
+	background-image: url("../Images/ani.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.img4{
+	background-image: url("../Images/sid.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.img2{
+	background-image: url("../Images/elon.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.info1{
+
+	display: none;
+	   transition: all 2s;
+}
+.heading-guest{
+           display: flex;
+           justify-content: center;
+           align-items: end;
+           width: 100%;
+           background: #0A111F;
+            font-family: "Poppins", sans-serif;
+            color: white;
+            font-size: 50px;
+			padding-top: 120px;
+}
+@media screen and (max-width: 1440px) {
+     .guest-main{
+     	height: auto;
+     }
+}
+
+.navbar{
+	/* font-size: 2%; */
+	width:10%;
+	height: fit-content;
+	/* border:1px solid red; */
+	color:white;
+	display: none;
+
+}
+.a1{
+	display: none;
+}
+@media screen and (max-width:1000px)
+{
+	.navbar{
+		width:15%;
+		height:20%;
+		/* font-size:10%; */
+		display: block;
+		/* border:1px solid red; */
+		font-size: 120%;
+		margin-left: 12%;
+
+	}
+	.a1{
+		display: block;
+	}
+	
+	
+}

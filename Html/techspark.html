@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <link rel="Stylesheet" href="../cssFiles/techspark.css">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="Stylesheet" href="../cssFiles/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="a1"><a href="../index.html">Home</a></div><br>
+        <div class="a1"><a href="./PreviousYear.html">Tech</a></div><br>
+        <div class="a1"><a href="./sample2.html">Non Tech</a></div><br>
+        <div class="a1"><a href="./guest.html">Guests</a></div><br>
+        <div class="a1"><a href="./Galleryy.html">Gallery</a></div><br>
+        <div class="a1"><a href="./techspark.html">Register</a></div><br>
+
+    </div>
+
+    <div class="register">
+        <div class="header">
+            <div class="left1">
+                <img src="../Images/man3.png" height="120%">
+            </div>
+            <a href="../index.html"><div class="op1">Home</div></a>
+        <a href="./PreviousYear.html"><div class="op1">Technical</div></a>
+        <a href="./sample2.html"><div class="op1">Non-tech</div></a>
+        <a href="./guest.html"><div class="op1">Guest</div></a>
+        <a href="./Galleryy.html"><div class="op1">Gallery</div></a>
+        <a href="./techspark.html"><div class="op1">Register</div></a>
+            <div class="right1">
+            
+        </div>
+            <div class="right2">
+                    <a href="./techspark.html"><button class="button-9" role="button">Register</button></a>
+                    <button class="button-10" role="button" onclick="funy1()">Options</button>
+            </div>
+                                                  
+        </div>
+        <div class="top">REGISTRATION</div>
+        <div class="down">
+            <div class="card">
+                <div class="one">TECHNICAL</div>
+                <div class="two">200/-</div>
+                <div class="three">
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;200/- for each technical
+                        event
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;participation
+                        certificates are provided
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;First price:2000/- with
+                        Merit certificate
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;second price:1500/- with
+                        Merit certificate
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;Third price:1000/- with
+                        Merit certificate
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;Accomdation is provided
+                    </div>
+                </div>
+                <div class="four">
+                    <a href="./register.html"><button>REGISTER</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="one">NON-TECHNICAL</div>
+                <div class="two">100/-</div>
+                <div class="three">
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;100/- for each non technical
+                        event
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;participation
+                        certificates are provided
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;First price:1000/- with
+                        Merit certificate
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;second price:750/- with
+                        Merit certificate
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;Third price:500/- with
+                        Merit certificate
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;Accomdation is provided
+                    </div>
+
+                </div>
+                <div class="four">
+                    <a href="./register1.html"><button>REGISTER</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="one">COUPON OFFER</div>
+                <div class="two">50% OFF</div>
+                <div class="three">
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;100/- for each technical event
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;50/- for each non-technical event
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;Enter Code to claim the offer
+                        
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;Cash Prizes are given
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;Certifications are
+                        provided
+                    </div>
+                    <div class="o">
+                        <div class="l"><i class="fa-solid fa-check"></i></div>&nbsp;&nbsp;&nbsp;Accomdation is provided
+                    </div>
+                </div>
+                <div class="four">
+                    <!-- <a href="register2.html"> -->
+                        <button onclick="checkCode()">REGISTER</button>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkCode() {
+            var codeInput = prompt("Ente the code to claim offer");
+    //    var codeInput = document.getElementById('codeInput').value;
+       var correctCode = 'WEBCRAFTERS'; // Replace with your desired code
+
+    if (codeInput === correctCode) {
+        window.location.href = 'register2.html'; // Replace with your desired page
+    } else {
+        alert('Incorrect code. Please try again.');
+    }
+}
+
+
+function navigateToPage(select) {
+                     var selectedValue = select.value;
+                     if (selectedValue) {
+                     window.location.href = selectedValue;
+                    }
+                   }
+                   var c1=1;
+                   function funy1(){
+                     if(c1==1){
+                    var a=document.getElementsByClassName("navbar")[0];
+                    a.style.display="block";
+                    c1++;
+      
+                  }
+                  else{
+                    var a=document.getElementsByClassName("navbar")[0];
+                    a.style.display="none";
+                    c1--;
+                  }
+      
+                 }
+                 var x = window.matchMedia("(max-width: 700px)");
+                 x.addEventListener("change", function() {
+                  myFunction(x);
+                   });
+                 function myFunction(x) { 
+                   if (x.matches) { 
+                        console.log("hello");
+                   
+                      } else {
+                         var a=document.getElementsByClassName("navbar")[0];
+                    a.style.display="none"
+                       }
+                       }
+      
+    </script>
+</body>
+
+</html>
